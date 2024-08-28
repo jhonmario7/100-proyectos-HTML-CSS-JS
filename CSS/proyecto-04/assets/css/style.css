@@ -1,0 +1,236 @@
+html {
+  /* Empezamos esta medida relativa para manejar rems en las demás clases. */
+  font-size: 10px;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 1.6rem;
+}
+
+.layout {
+  max-width: 62rem; /* 620 px */
+  margin: 0 auto; /* Centra el elemento */
+  margin-top: 3rem;
+  /*  border: 1px solid black; Donde tenemos el elemento */
+}
+
+.layout__header {
+  width: 100%; /* Va tener los 62rem de maximo */
+  display: flex; /* me va posicionar un elemento uno al lado de otro */
+  flex-direction: column;
+  gap: 4rem; /* separación de los elementos uno del otro */
+  margin-bottom: 5rem;
+}
+
+.header__top {
+  display: flex; /* un elemento al lado del otr */
+  flex-direction: row; /* elemento organizado en una fila */
+  align-items: center; /* posicionar los elementos en el centro */
+  justify-content: space-between; /* Un espaciado entre media del uno al otro, es decir los dos uno de extremo a otro*/
+}
+
+.header__top > .fa-solid {
+  font-size: 3.6rem;
+  color: #2761da;
+}
+
+.header__title {
+  font-size: 3.6rem;
+  color: #2761da;
+}
+
+/* Parte del formulario: */
+
+.header__bottom {
+  width: 100%;
+}
+
+.header__search {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+}
+
+.search__control {
+  flex-basis: 75%; /* Equivale a poner un widht en formato flex-box */
+  border-radius: 1rem;
+
+  /* Aqui posicionaremos la lupita al lado del input. */
+  display: flex;
+  flex-direction: row;
+  background-color: #f4f4f4;
+}
+
+.search__input {
+  width: 95%;
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: none; /* sin border */
+  outline: none; /* sin border que le pone google chrome */
+  font-weight: bold; /* negra en negrita */
+  color: #2d2d2d;
+  text-align: center;
+}
+
+.search__control > .fa-solid {
+  width: 5%;
+  cursor: pointer;
+  transition: all 300ms linear; /* Forma para que sea más pequeñito. */
+
+  /* le damos posición al elemento */
+  margin-top: 1.6rem;
+  margin-right: 0.5rem;
+}
+
+/* Efecto de cambiar el color cuando se pone encima el puntero. */
+.search__control > .fa-solid:hover {
+  color: #2761da;
+}
+
+.search__input::placeholder {
+  color: #2d2d2d;
+  text-align: center;
+}
+
+.search__select {
+  width: 25%;
+  background-color: #f4f4f4;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  color: #2d2d2d;
+  text-align: center;
+}
+
+/* Contenido de textos. */
+
+.layout__word {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.word__title {
+  color: #2d2d2d;
+  font-weight: 900;
+  font-size: 4.5rem;
+}
+
+.word__btn {
+  background-color: #47a8ed;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: all 300ms ease-in-out;
+
+  /* Manera automatica para darle centro al logito: play */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.word__btn .fa-solid {
+  color: white;
+  font-size: 2rem;
+}
+
+/* Efecto de cambiar el color si pongo el puntero encima.*/
+.word__btn:hover {
+  background-color: #2761da;
+}
+
+/* Estilo de contenido de definiciones(word) */
+
+.definitions__title {
+  overflow: hidden; /* si algo se sale de ahi se oculte */
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+  color: #2d2d2d;
+}
+
+/* Añadirmos unas lineas a la separación, aquí vamos a usar psudoelemtnos y por la documentación
+de mozilla usaremos "::" en vez de uno. */
+
+.definitions__title::before,
+.definitions__title::after {
+  content: "";
+  background-color: #ececec;
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.definitions__title::before {
+  right: 0.5rem;
+  margin-left: -50%;
+}
+
+.definitions__title::after {
+  left: 0.5rem;
+  margin-right: -50%;
+}
+
+/* Damos estilos a la lista principal. */
+
+.definitions__list {
+  width: 100%;
+  padding: 2.5rem;
+  list-style: disc; /* Añadimos un puntico. */
+}
+
+.list__item {
+  padding: 1.5rem 0.5rem;
+  text-align: justify;
+}
+
+.list__item::marker {
+  color: #2761da;
+}
+
+/* Tdoso los elementos que están en la etiqueta b */
+.list__item b {
+  color: #2761da;
+}
+
+.definitions__sym {
+  margin-bottom: 2rem;
+}
+
+.syn__item {
+  color: #2761da;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.syn__title {
+  color: #949494;
+  font-weight: bold;
+  display: block;
+  display: inline; /* Hace que los elementos se posiciones en la misma linea. */
+  margin-right: 1rem;
+}
+
+.layout__footer {
+  width: 100%;
+  border-top: 1px solid #ececec;
+  padding: 1.5rem 0rem;
+}
+
+.footer__text{
+
+  font-size: 1.4rem;
+  color: #8f8f8f;
+
+
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/reset.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+
+  <title>Proyecto 04 CSS - Jhon Mario Rodriguez Ramirez</title>
+
+</head>
+<body>
+  
+
+
+    <!-- Elemento main (Toda la propia pagina centrada) -->
+
+    <div class="layout">
+
+      <!-- header (Parte de arriba, del formulario) -->
+      <header class="layout__header">
+
+        <!-- Header top: parte más arriba, donde tengo el icono y nombre traductor.  -->
+        
+        <div class="header__top">
+
+          <i class="fa-solid fa-language"></i>
+          <h3 class="header__title">Traductor</h3>
+
+        </div>  
+
+        <!-- Siguiente elemento del footer: -->
+        <div class="header__bottom">
+          <!-- Aquí guardamos nuestro formulario. -->
+           <form class="header__search">
+
+            <!-- Input y select con su respectivo placeholder y icono. -->
+
+            <div class="search__control">
+              <input type="search" class="search__input" name="search" placeholder="Introduce una palabra.">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <select name="language" class="search__select">
+              <option class="search__option" value="esp">Español</option>
+              <option class="search__option" value="ing">Ingles</option>
+              <option class="search__option" value="ger">Aleman</option>
+              <option class="search__option" value="fr">Frances</option>
+            </select>
+
+
+           </form>
+
+
+        </div>
+
+
+      </header>
+
+      <!-- Main (Es lo más esencial que nos va mostrar nuestra pagina.) -->
+      <main class="layout__word">
+        <h1 class="word__title">
+          Ordenador
+        </h1>
+        <a href="#" class="word__btn">
+          <i class="fa-solid fa-play"></i>
+        </a>
+      </main>
+
+      <!-- Esta sections es el cuerpo, donde mostraremos las definiciones. -->
+      <section class="layout__definitions">
+
+        <h3 class="definitions__title">
+          <span>Definiciones</span>
+        </h3>
+
+        <!-- Este ul va tener todas la definiciones y la lista de las mismas. -->
+        <ul class="definitions__list">
+
+          <li class="list__item">
+            <p class="list__definition">
+              <b>Ordenado: </b>Un ordenador es la unión entre una serie de componentes físicos llamados Hardware, y un sistema operativo con programas informáticos denominado Software. Además de estos, puede incluir componentes no esenciales para su funcionamiento llamados periféricos, cuya labor es añadir funcionalidades.
+            </p>
+          </li>
+
+          <li class="list__item">
+            <p class="list__definition">
+              <b>Ordenador complatible: </b> La definición más sencilla sobre lo que es compatible en informática, es la capacidad que tienen dos sistemas de intercambiar información uno con otro simultáneamente. Dichos sistemas se denominan tanto hardware como software.
+            </p>
+          </li>
+
+          <li class="list__item">
+            <p class="list__definition">
+              <b>Ordenador personal: </b> Computadora, computador u ordenador​​​ es una máquina electrónica digital programable que ejecuta una serie de comandos para procesar los datos de entrada, obteniendo convenientemente información que posteriormente se envía a las unidades de salida.
+            </p>
+          </li>
+
+          <li class="list__item">
+            <p class="list__definition">
+              <b>Ordenador pórtatil: </b> Un computador portátil o laptop es un equipo personal que puede ser transportado fácilmente. Muchos de ellos están diseñados para soportar software y archivos igual de robustos a los que procesa un computador de escritorio.
+            </p>
+          </li>
+
+        </ul>
+
+        <article class="definitions__sym">
+          <h4 class="syn__title">Sinonimos:</h4>
+          <span class="syn__item">Computador</span>
+          <span class="syn__item">Computadora</span>
+          <span class="syn__item">Procesadora</span>
+        </article>
+
+      </section>
+
+      <!-- Aquí definimos el footer: -->
+      <footer class="layout__footer">
+        <p class="footer__text">
+          Todos los derechos reservados a Jhon Mario Rodriguez &copy;
+        </p>
+      </footer>
+
+    </div>
+
+
+
+
+
+
+</body>
+</html>
