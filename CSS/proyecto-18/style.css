@@ -1,0 +1,125 @@
+html {
+  font-size: 11px;
+}
+
+body {
+  font-family: Monserrat, Arial, Helvetica, sans-serif;
+  /*   font-size: 1.6rem; */
+}
+
+.layout {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8eded;
+}
+
+.layout__card {
+  display: flex;
+  flex-direction: row; /* Elementos en fila */
+  max-width: 86rem;
+  height: 30rem;
+  background-color: white;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card__container-img {
+  flex-basis: 40%;
+  height: 100%;
+}
+
+.card__content {
+  flex-basis: 60%;
+  height: 100%;
+  padding: 3rem 4rem; /* Por los lados 4rem */
+}
+
+.card__title {
+  font-size: 2rem;
+  line-height: 1.4;
+  color: #3f7080;
+  margin-bottom: 1.5rem;
+}
+
+.card__description {
+  font-size: 1.4rem;
+  color: #9897a5;
+  margin-bottom: 2rem;
+}
+
+.card__user {
+  display: flex; /* Elementos uno al lado del otro */
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; /* Logramos espaciado entre los elementos */
+}
+
+.user__info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem; /* Seperacion entre los elementos. */
+}
+
+.user__container-name {
+  display: flex;
+  flex-direction: column; /* En columna */
+  font-size: 120%;
+}
+
+.user__name{
+  font-size: 1.4rem;
+  color: rgb(70, 69, 69);
+  font-weight: 600;
+}
+
+.user__date{
+
+  font-size: 1.4rem;
+  color: #b2b2b2;
+  font-weight: 400;
+
+
+}
+
+.user__container-img {
+  width: 5rem;
+  height: 5rem;
+}
+
+.user__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.user__icon{
+
+  background-color: #00a7db;
+  color: white;
+  border-radius: 100%; /* Creamos el circulo */
+  width: 4rem;
+  height: 4rem;
+  /* text-align: center;
+     line-height: 4rem; 
+  */
+
+
+  /* Manera dos de centrar el item: */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.user__icon:hover{
+
+  background-color: rgb(68, 68, 180);
+  transition: all 300ms ease;
+
+
+}

@@ -1,0 +1,131 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Monserrat", Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+
+.layout {
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f7e9dc;
+}
+
+.layout__main {
+  width: 50rem;
+}
+
+.main__header {
+  padding: 3rem;
+  background-color: #5dd8ec;
+  color: white;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+.header__subtitle {
+  margin-bottom: 0.5rem;
+}
+
+.main__graph {
+  background-color: white;
+  padding: 3rem;
+  border-radius: 2rem;
+}
+
+.graph__tittle {
+  font-size: 2.4rem;
+  margin-bottom: 6rem;
+}
+
+/* GRAFICAS: */
+
+.graph__container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: flex-end;
+}
+
+.graph__bar {
+  height: 5rem;
+  width: calc(14% - 0.5rem);
+  background-color: #5dd8ec;
+  border-radius: 0.5rem;
+}
+
+.graph__bar--1 {
+  height: 9rem;
+  background-color: #596dc2;
+}
+
+.graph__bar--2 {
+  height: 6rem;
+}
+
+.graph__bar--3 {
+  height: 2rem;
+}
+
+.graph__bar--4 {
+  height: 1rem;
+}
+
+.graph__bar--5 {
+  height: 7rem;
+}
+
+.graph__bar--6 {
+  height: 3rem;
+}
+
+.graph__bar--7 {
+  height: 2rem;
+}
+
+/* DESCRIPCIÓN GRAFICAS: */
+
+.graph__ranges {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.ranges__item {
+  width: calc(14% - 0.5rem);
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #9899a1;
+}
+
+/* RESULTADOS: */
+.graph__result {
+  margin-top: 4rem;
+  padding: 2rem;
+  border: 1px solid #b8b9c6;
+  border-radius: 1rem;
+}
+
+.result__title {
+  font-size: 1.5rem;
+  color: #9899a1;
+}
+
+.result__age{
+
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-top: 0.2rem;
+
+
+}

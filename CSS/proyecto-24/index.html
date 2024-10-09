@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto 24 CSS - @marioneet_</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="../../recursos-css/reset.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <main class="layout__main">
+        <!-- Sección izquierda -->
+        <section class="main__left">
+          <!-- Lista ordenada: -->
+          <ol class="main__steps">
+            <li class="steps__items">
+              <div class="steps__container-number">
+                <span class="steps__number">1</span>
+              </div>
+              <div class="steps__content">
+                <span class="steps__title">Paso 1</span>
+                <span class="steps__description">Crea tu cuenta</span>
+              </div>
+            </li>
+            <li class="steps__items">
+              <div class="steps__container-number">
+                <span class="steps__number">2</span>
+              </div>
+              <div class="steps__content">
+                <span class="steps__title">Paso 2</span>
+                <span class="steps__description">Dirección</span>
+              </div>
+            </li>
+            <li class="steps__items">
+              <div class="steps__container-number">
+                <span class="steps__number">3</span>
+              </div>
+              <div class="steps__content">
+                <span class="steps__title">Paso 3</span>
+                <span class="steps__description">Forma de Pago</span>
+              </div>
+            </li>
+            <li class="steps__items">
+              <div class="steps__container-number">
+                <span class="steps__number">4</span>
+              </div>
+              <div class="steps__content">
+                <span class="steps__title">Paso 4</span>
+                <span class="steps__description">Confirmación</span>
+              </div>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Seccion derecha -->
+        <section class="main__right">
+
+          <header class="main__header">
+            <h1 class="header__title">Registro</h1>
+            <p class="header__subtitle">Crea tu cuenta para poder seguir con la compra</p>
+          </header>
+
+          <form class="main__form">
+
+            <div class="form__control">
+              <label class="form__label" for="name">Nombre</label>
+              <input class="form__input" type="text" name="name" id="name" placeholder="Introduce tú nombre.">
+            </div>
+
+            <div class="form__control">
+              <label class="form__label" for="surname">Apellidos</label>
+              <input class="form__input" type="text" name="name" id="surname" placeholder="Introduce tú apellido.">
+            </div>
+
+            <div class="form__control">
+              <label class="form__label" for="email">Email</label>
+              <input class="form__input" type="email" name="email" id="email" placeholder="Introduce tú correo electronico.">
+            </div>
+
+            <div class="form__control">
+              <label class="form__label" for="date">Fecha de nacimiento</label>
+              <input class="form__input" type="date" name="date" id="date" >
+            </div>
+
+            <div class="form__control">
+              <label class="form__label" for="pass">Contraseña</label>
+              <input class="form__input" type="password" name="pass" id="pass" placeholder="Contraseña" >
+            </div>
+
+            <input type="submit" value="Siguiente" class="fomr__btm">
+
+          </form>
+        </section>
+
+      </main>
+    </div>
+  </body>
+</html>
