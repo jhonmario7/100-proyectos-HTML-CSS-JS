@@ -1,0 +1,72 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background-color: #e9effb;
+}
+
+.layout{
+    width: 100%;
+    min-height: 100%; 
+    position: absolute; /* para que ocupe todo el ancho y alto de la pantalla */
+    display: flex; /* para que se puedan centrar los elementos */
+    justify-content: center; /* para que se centre el contenido */
+    align-items: center;
+}
+
+.layout__main{
+
+    width: 40rem;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+.layout__container-crono{
+    margin-bottom: 1rem;
+}
+
+.layout__crono{
+    font-size: 7rem;
+    font-weight: bold;
+    width: 25rem;
+}
+
+.layout__btns{
+    width: 50%;
+    display: flex; /* Para que los botones esten uno al lado del otro */
+    justify-content: center;
+    gap: 1rem; /* Para que se separen los botones */
+}
+
+.layout_btn_start,
+.layout_btn_stop{
+    width: 100%;
+    border: none;
+    background-color: #df3d3f;
+    color: #fff;
+    font-weight: 600;
+    padding: 1rem 0rem;
+    border-radius: 0.5rem;
+    cursor: pointer; /* Para que se pueda hacer click en el boton */
+    transition: all 300ms ease-in-out; /* Para que se pueda hacer click en el boton */
+}
+
+.layout_btn_stop{
+    background-color: #CCCCCC;
+    color: #fff;
+}
+
+/* HOVER: para que cambie el color del boton cuando se pase el mouse por encima */
+
+.layout_btn_start:hover{
+    background-color: rgb(22, 140, 22);
+
+}
+
+.layout_btn_stop:hover{
+    background-color: rgb(27, 22, 22);
+}
