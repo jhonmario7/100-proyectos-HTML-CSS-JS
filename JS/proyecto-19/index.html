@@ -1,64 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../recursos-css/reset.css">
-    <link rel="stylesheet" href="../proyecto-19/assets/css/style.css">
-    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="../proyecto-19/assets/css/style.css">
+        <link rel="stylesheet" href="../../recursos-css/reset.css">
+
     <script src="assets/js/main.js" defer></script>
 
-    <title>Proyecto 19 - @Marioneet</title>
-
+    <title>Proyecto 19 | Jhon Mario Rodriguez</title>
 </head>
 
 <body>
     <div class="layout">
-        <article class="layout__card">
-            <header class="card__header">
-                <p class="header__author">Jhon Mario Rodriguez</p>
-            </header>
-            <div class="card__content">
-                <h2 class="content__title">Caja de prueba</h2>
-                <p class="content__description">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est eligendi harum officia.
-                </p>
-                <button class="content__btn"> Cambiar estilos.
-                </button>
-            </div>
-        </article>
 
+        <section class="layout__container-form">
 
+            <form class="form__create">
 
-        <article class="layout__card">
-            <header class="card__header">
-                <p class="header__author">Jhon Mario Rodriguez</p>
-            </header>
-            <div class="card__content">
-                <h2 class="content__title">Caja de prueba</h2>
-                <p class="content__description">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est eligendi harum officia.
-                </p>
-                <button class="content__btn"> Cambiar estilos.
-                </button>
-            </div>
-        </article>
+                <div class="create__container">
+                    <label class="create__label" form="title">Titulo</label>
+                    <input class="create__input" type="text" id="title" required />
+                </div>
 
+                <div class="create__container">
+                    <label class="create__label" form="subtitle">Subtitulo</label>
+                    <input class="create__input" type="text" id="subtitle" required />
+                </div>
 
+                <div class="create__container">
+                    <label class="create__label" form="description">Descripcion</label>
+                    <textarea class="create__input" id="description" required>  </textarea>
+                </div>
 
-        <article class="layout__card">
-            <header class="card__header">
-                <p class="header__author">Jhon Mario Rodriguez</p>
-            </header>
-            <div class="card__content">
-                <h2 class="content__title">Caja de prueba</h2>
-                <p class="content__description">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est eligendi harum officia.
-                </p>
-                <button class="content__btn"> Cambiar estilos.
-                </button>
-             </div>
+                <input class="create__btn" type="submit" value="Crear articulo">
+            </form>
+        </section>
+
+        <br>
+
+        <section class="layout__articles">
+            <article class="layout__card">
+                <header class="card__header">
+                    <p class="header__author">Jhon Mario Rodriguez</p>
+                </header>
+                <div class="card__content">
+                    <h2 class="content__title">Caja de prueba</h2>
+                    <p class="content__description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est eligendi harum officia.
+                    </p>
+                    <button class="content__btn"> Cambiar estilos.
+                    </button>
+                </div>
             </article>
+    
+    
+    
+            <article class="layout__card">
+                <header class="card__header">
+                    <p class="header__author">Jhon Mario Rodriguez</p>
+                </header>
+                <div class="card__content">
+                    <h2 class="content__title">Caja de prueba</h2>
+                    <p class="content__description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est eligendi harum officia.
+                    </p>
+                    <button class="content__btn"> Cambiar estilos.
+                    </button>
+                </div>
+            </article>
+    
+    
+    
+            <article class="layout__card">
+                <header class="card__header">
+                    <p class="header__author">Jhon Mario Rodriguez</p>
+                </header>
+                <div class="card__content">
+                    <h2 class="content__title">Caja de prueba</h2>
+                    <p class="content__description">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est eligendi harum officia.
+                    </p>
+                    <button class="content__btn"> Cambiar estilos.
+                    </button>
+                 </div>
+                </article>
+
+        </section>
+
+
         </div>
 </body>
 </html>
