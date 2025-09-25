@@ -1,0 +1,7 @@
+{
+    "html-css-class-completion.enableEmmetSupport": true,
+    "html-css-class-completion.includeGlobPattern": "**/*.{css,scss,sass,less}",
+    "html-css-class-completion.excludeGlobPattern": "{node_modules/**,*.min.css}",
+    "css.validate": true,
+    "html.suggest.html5": true
+}
