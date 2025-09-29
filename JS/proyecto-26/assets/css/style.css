@@ -18,10 +18,51 @@ body{
     align-items: center;
 }
 
-.layou__main{
+.layout__main{
+    width: 25rem;
+    height: 25rem;
 
 }
 
+.main__star{
+    position: absolute;
+    color: #FBE323;
+    font-size: 25rem;
+    cursor: pointer;
+}
+
+.main__star--gray{
+    color: #ccc;
+    z-index: 1;
+
+}
+
+.main__star--yellow{
+    color: #FBE323;
+    z-index: 1;
+
+
+    opacity: 0;
+    visibility: hidden;
+}
+
+@keyframes scale-animation{
+    100%{
+        transform: scale(1.7);
+        opacity: 0;
+    }
+}
+
+
+.visible{
+    animation: scale-animation 1s linear;
+    opacity: 1;
+    visibility: visible;
+}
+
+.yellow-color{
+    color: #FBE323;
+}
 
 
 
