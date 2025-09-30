@@ -1,0 +1,54 @@
+html{
+    font-size: 10px;
+    height: 100%;
+}
+
+body{
+
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    height: 100%;
+}
+
+.layout{
+    background-color: #F7F8FD;
+    height: 100%;
+}
+
+.layout__main{
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__container{
+    width: 70%;
+}
+
+.main__title{
+    text-align: center;
+    margin-bottom: 4rem;
+    font-weight: 800;
+    font-size: 4.5rem;
+    color: #37384E;
+}
+
+.main__socials{
+    width: 100%;
+    background-color: #37384E;
+    border-radius: 10px;
+    padding: 4rem 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.social__items{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
