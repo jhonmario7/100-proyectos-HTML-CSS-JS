@@ -1,0 +1,57 @@
+html{
+    font-size: 10px;
+}
+
+
+body{
+    font-size: 1.6rem;
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    background-color: #e8effa;
+}
+
+.layout{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout__main{
+    display: flex;
+    flex-direction: row;  
+    height: 40rem; 
+}
+
+.main__steps{
+    position: relative;
+    margin-right: 4rem;
+
+}
+
+.steps__progress, .steps__bar{
+    position: absolute;
+    margin-left: 0.5rem;
+
+    width: 0.5rem;
+    transition: all 300ms ease-in-out;
+}
+
+.steps__progress{
+    height: 100%;
+    background-color: #cbd0cc;
+
+}
+
+.steps__bar{
+    height: 0%;
+    background-color: #009688;
+}
+
+.steps__circles{
+    position: absolute;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+}
