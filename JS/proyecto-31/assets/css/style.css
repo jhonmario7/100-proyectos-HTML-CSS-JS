@@ -32,8 +32,9 @@ body{
 
 .steps__progress, .steps__bar{
     position: absolute;
-    margin-left: 0.5rem;
-
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
     width: 0.5rem;
     transition: all 300ms ease-in-out;
 }
@@ -54,4 +55,73 @@ body{
     flex-direction: column;
     display: flex;
     justify-content: space-between;
+    height: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
 }
+
+.steps__step{
+    background-color: white;
+    border-radius: 5rem;
+    border: 3px solid #cbd0cc;
+    width: 3rem;
+    height: 3rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #5c6f84;
+    transition: all 300ms linear;
+}
+
+.steps__step > .fa-solid{
+    opacity: 0;
+    transition: all 300ms linear;
+
+}
+
+.active{
+    border: 3px solid #009688;
+    
+}
+
+.active > .fa-solid{
+    opacity: 1;
+}
+
+
+.main__btns{
+    display: flex;
+    align-items: flex-end;
+    gap: 1.5rem;
+}
+
+.btns__prev, .btns__next{
+
+    
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    outline: none;
+    background-color: #009688;
+    padding: 1rem;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 300ms linear;
+}
+
+.disable{
+    background-color: #e0e0e0;
+    cursor: not-allowed;
+}
+
+
