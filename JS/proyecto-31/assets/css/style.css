@@ -2,7 +2,6 @@ html{
     font-size: 10px;
 }
 
-
 body{
     font-size: 1.6rem;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
@@ -27,7 +26,6 @@ body{
 .main__steps{
     position: relative;
     margin-right: 4rem;
-
 }
 
 .steps__progress, .steps__bar{
@@ -42,7 +40,6 @@ body{
 .steps__progress{
     height: 100%;
     background-color: #cbd0cc;
-
 }
 
 .steps__bar{
@@ -58,7 +55,6 @@ body{
     height: 100%;
     left: 50%;
     transform: translateX(-50%);
-
 }
 
 .steps__step{
