@@ -66,28 +66,39 @@ body{
     color: #0570a1
 }
 
-.list__item:nth-child(1){
+.list__open > .list__item:nth-child(1){
     transform: translate(-15rem, 6rem);
+    transition-delay: 100ms;
 }
 
-.list__item:nth-child(2){
+.list__open > .list__item:nth-child(2){
     transform: translate(15rem, -6rem);
+    transition-delay: 400ms;
+
 }
 
-.list__item:nth-child(3){
+.list__open > .list__item:nth-child(3){
     transform: translate(15rem, 6rem);
+    transition-delay: 500ms;
+
 }
 
-.list__item:nth-child(4){
+.list__open > .list__item:nth-child(4){
     transform: translateY(15rem);
+    transition-delay: 600ms;
+    
 }
 
-.list__item:nth-child(5){
+.list__open > .list__item:nth-child(5){
     transform: translateY(-15rem);
+    transition-delay: 300ms;
+
 }
 
-.list__item:nth-child(6){
+.list__open > .list__item:nth-child(6){
     transform: translate(-15rem, -6rem);
+    transition-delay: 200ms;
+
 }
 
 .nav__btn{
