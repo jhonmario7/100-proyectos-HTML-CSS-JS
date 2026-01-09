@@ -6,6 +6,7 @@ body{
     font-size: 1.6rem;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     background-color: #f7f8fd;
+    overflow-x: hidden;
 }
 
 .layout{
@@ -25,8 +26,73 @@ body{
     gap: 2rem;
     width: 60%;
     padding: 3rem 4rem;
+}
+
+
+.articles__article{
+    padding: 2rem;
+    border: 2px solid #356876;
+    border-radius: 5px;
+    transition: all 400ms linear;
+    transform: translate(400%);
+}
+
+.articles__article--show{
+    transform: translate(0%);
+}
+
+.article__title{
+    font-size: 2rem;
+    line-height: 1.4;
+    color: #356876;
+    margin-bottom: 1.5rem;
+}
+
+.article__description{
+    font-size: 1.4rem;
+    color: #ADAEBF;
+    margin-bottom: 2rem;
 
 }
+
+.article__info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem
+}
+
+.info__container-img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.info__img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+
+}
+
+
+.info__container-name{
+    display: flex;
+    flex-direction: column;
+}
+
+.info__name{
+    font-size: 1.4rem;
+    color: #453848;
+    font-weight: 600;
+}
+
+
+.info__date{
+    font-size: 1.4rem;
+    color: #bbb;
+    font-weight: 400;
+}
+
 
 
 
