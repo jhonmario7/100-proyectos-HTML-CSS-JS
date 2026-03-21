@@ -9,6 +9,9 @@ window.addEventListener("load", () => {
     let sliderLenght = document.querySelectorAll(".left__bg").length;
     let sliderIndex = 0;
 
+    right.style.top = `-${(sliderLenght-1)*100}vh`
+    
+
     let actions = (action) => {
 
         if (action == "up") {
@@ -30,7 +33,8 @@ window.addEventListener("load", () => {
 
     let windowHeight = layout.clientHeight;
 
-    console.log(sliderIndex, windowHeight);
+    left.style.transform = `translateY(-${sliderIndex * windowHeight}px)`
+    right.style.transform = `translateY(${sliderIndex * windowHeight}px)`
 
     }
 
