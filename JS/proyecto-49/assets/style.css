@@ -1,0 +1,53 @@
+html{
+    font-size: 10px;
+}
+
+body{
+    font-family: Montserrat;
+    font-size: 1.6rem;
+    overflow-x: hidden;
+}
+
+.layout{
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f8fd;
+}
+
+.layout__main{
+    width: 50rem;
+}
+
+.main__title{
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.main__form{
+    width: 100%;
+}
+
+.form__input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: #24273d;
+    padding: 1.5rem;
+    border-radius: 5px;
+    margin-bottom: 4rem;
+    color: #bbb;
+    font-weight: 600;
+
+}
+
+
+.form__input::placeholder{
+    color: #bbb;
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/reset.css" />
+  <title>Proyecto 48 JSS - @marioneet_</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/fonts/fontawesome-free-6.1.2-web/css/all.min.css" />
+
+  <script src="./assets/main.js"></script>
+
+</head>
+
+<body>
+  <div class="layout">
+    <main class="layout__main">
+      <h1 class="main__title">Generar contraseña</h1>
+      <div class="main__generate">
+        <p class="generate__mail">f12s2</p>
+        <i class="fa-solid fa-copy generate__icon"></i>
+      </div>
+
+      <form class="main__form">
+        <div class="form__slider">
+          <div class="control__title">
+            <span class="control__text">Longitud</span>
+            <span class="control__number">5</span>
+          </div>
+
+          <input class="control_range" type="range" value="5" min="5" max="15" />
+        </div>
+
+
+        <div class="form__control">
+          <input type="checkbox" name="letters" id="letters" class="control__checkbox" />
+          <label for="letters" class="control__label">Con letras en minusculas.</label>
+        </div>
+        <div class="form__control">
+          <input type="checkbox" name="mayus" id="mayus" class="control__checkbox" />
+          <label for="mayus" class="control__label">Con letras en mayusculas.</label>
+        </div>
+        <div class="form__control">
+          <input type="checkbox" name="numbers" id="numbers" class="control__checkbox" />
+          <label for="numbers" class="control__label">Con números.</label>
+        </div>
+        <div class="form__control">
+          <input type="checkbox" name="sym" id="sym" class="control__checkbox" />
+          <label for="sym" class="control__label">Con simbolos.</label>
+        </div>
+
+        <input type="submit" class="form__submit" value="Crear" />
+      </form>
+    </main>
+  </div>
+</body>
+
+</html>
