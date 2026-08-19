@@ -137,7 +137,6 @@ body {
 
 
 .control__checkbox:checked {
-
   background-image: url("../../../../recursos-css/check.svg");
   background-size: contain;
 }
