@@ -3,6 +3,7 @@ window.addEventListener("load", () => {
     let layoutProducts = document.querySelector(".layout__products");
     let layoutCart = document.querySelector(".layout__cart");
     let cartProducts = document.querySelector(".cart__products");
+    let totalPrice = document.querySelector(".total__price")
 
 
 
@@ -41,6 +42,42 @@ window.addEventListener("load", () => {
 
     let cart = [];
 
+    function removeCart(id) {
+        let cartProduct = findCart(id);
+
+        if (cartProduct.quantity >= 1) {
+            cartProduct.quantity--;
+        }
+
+
+        if (cartProduct.quantity <= 0) {
+            cart.splice(cartProduct.id, 1);
+        }
+
+        if(getTotal() == 0 ){
+            cart = [];
+            localStorage.removeItem("cart");
+            localStorage.clear();
+            
+        }
+
+        localStorage.setItem("cart", JSON.stringify(cart));
+    }
+
+    function getTotal() {
+        let total = 0;
+
+        cart.forEach(productCart => {
+            let product = findProduct(productCart.id);
+            let subtotal = product.price * productCart.quantity;
+
+            total += subtotal;
+        });
+
+        return total.toFixed(2);
+    }
+
+
     function showCart() {
 
         /* alert("entro") */
@@ -56,8 +93,8 @@ window.addEventListener("load", () => {
         cart.forEach(cartProduct => {
             let product = findProduct(cartProduct.id);
 
-            
-            
+
+
             let subtotal = product.price * cartProduct.quantity;
 
             cartProducts.innerHTML += `
@@ -82,8 +119,25 @@ window.addEventListener("load", () => {
                     </div>
                 </article>
             `;
-        });
 
+            let total = getTotal();
+            totalPrice.textContent = total + " USD";
+
+            let iconMinus = document.querySelectorAll(".btn-quantity__ico-minus");
+
+            iconMinus.forEach(ico => {
+                ico.addEventListener("click", () => {
+
+                    let productId = ico.getAttribute("data-id");
+
+                    removeCart(productId);
+
+                    showCart();
+
+                });
+            });
+
+        });
     }
 
     function loadCart() {
@@ -97,7 +151,6 @@ window.addEventListener("load", () => {
         if (cart.length > 0) {
             layoutCart.classList.remove("layout__cart--hide");
         }
-
     }
 
     function addCart(id) {
@@ -169,13 +222,10 @@ window.addEventListener("load", () => {
                 if (product.stock > 0) {
                     //Añado al carrito el producto
                     addCart(productId);
+                    showCart();
                 }
-
             });
-
         });
-
-
     }
 
     showProducts();
