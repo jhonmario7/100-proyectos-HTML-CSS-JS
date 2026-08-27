@@ -3,7 +3,12 @@ window.addEventListener("load", () => {
     let layoutProducts = document.querySelector(".layout__products");
     let layoutCart = document.querySelector(".layout__cart");
     let cartProducts = document.querySelector(".cart__products");
-    let totalPrice = document.querySelector(".total__price")
+    let totalPrice = document.querySelector(".total__price");
+    let cartIco = document.querySelector(".cart__ico");
+    let cartBtn = document.querySelector(".cart__btn");
+
+
+
 
 
 
@@ -51,14 +56,15 @@ window.addEventListener("load", () => {
 
 
         if (cartProduct.quantity <= 0) {
-            cart.splice(cartProduct.id, 1);
+            let index = cart.findIndex(product => product.id === cartProduct.id);
+            cart.splice(index, 1);
         }
 
-        if(getTotal() == 0 ){
+        if (getTotal() <= 0) {
             cart = [];
             localStorage.removeItem("cart");
             localStorage.clear();
-            
+
         }
 
         localStorage.setItem("cart", JSON.stringify(cart));
@@ -131,6 +137,20 @@ window.addEventListener("load", () => {
                     let productId = ico.getAttribute("data-id");
 
                     removeCart(productId);
+
+                    showCart();
+
+                });
+            });
+
+            let iconPlus = document.querySelectorAll(".btn-quantity__ico-plus");
+
+            iconPlus.forEach(ico => {
+                ico.addEventListener("click", () => {
+
+                    let productId = ico.getAttribute("data-id");
+
+                    addCart(productId);
 
                     showCart();
 
@@ -227,6 +247,17 @@ window.addEventListener("load", () => {
             });
         });
     }
+
+    cartIco.addEventListener("click", () => {
+        layoutCart.classList.toggle("layout__cart--hide");
+    });
+
+    cartBtn.addEventListener("click", () => {
+        cart = [];
+        localStorage.removeItem("cart");
+        localStorage.clear();
+        layoutCart.classList.toggle("layout__cart--hide");
+    });
 
     showProducts();
     loadCart();
